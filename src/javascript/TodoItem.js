@@ -6,8 +6,12 @@ class TodoItem {
         this.priority = priority;
     }
 
-    getDetails() {
-        return `${this.title} ${this.description} ${this.dueDate} ${this.priority}`;
+    getDetail(detailType) {
+        if (typeof this[detailType] === "undefined") {
+            console.log("ERROR: Detail type not found")
+            return;
+        }
+        return this[detailType];
     }
 }
 
