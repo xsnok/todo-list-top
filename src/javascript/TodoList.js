@@ -12,7 +12,7 @@ class TodoList {
     }
 
     removeItem(itemTitle) {
-        this.list.filter(this.list, this.list.title !== itemTitle)
+        this.list = this.list.filter(item => item.title !== itemTitle)
     }
 
     getList() {
