@@ -1,11 +1,9 @@
 class IdCounter {
-    constructor() {
-        this.id = 0;
-    }
+    static id = 0;
 
     generateId() {
-        this.id++;
-        return this.id;
+        IdCounter.id++;
+        return IdCounter.id;
     }
 }
 export default IdCounter;
