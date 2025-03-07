@@ -2,14 +2,28 @@
 
 :root {
     font-family: "Roboto", sans-serif;
+}
+
+body {
     margin: 0;
-    padding: 0;
+}
+
+#page-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#sidebar-container {
+    background-color: #FAF8F6;
+    padding: 1rem;
+    height: 100vh;
 }
 
 #user {
     display: flex;
     align-items: center;
     gap: .5rem;
+    margin-bottom: 3rem;
 }
 
 #user-icon {
@@ -22,4 +36,71 @@
 #username {
     font-family: 'roboto';
     font-size: 1rem;
+}
+
+#sidebar-main {
+    display: flex;
+    flex-direction: column;
+    gap :.5rem;
+}
+
+.sidebar-section {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.sidebar-section-text {
+    color: #DC4C3E;
+    font-size: 1rem;
+}
+
+.sidebar-section-icon {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(50%) saturate(4536%) hue-rotate(341deg) brightness(94%) contrast(83%);
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#body-header {
+    display: flex;
+    color: gray;
+    justify-content: end;
+    margin: 1rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    width: 15rem;
+    gap: .5rem;
+}
+
+.list-name {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.list-item {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    border-radius: 8px;
+    box-shadow: 0 0 2px 0 black;
+    padding: 1rem .5rem;
+}
+
+.dot {
+    height: 1rem;
+    width: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: gray;
+    border-width: 2px;
 }

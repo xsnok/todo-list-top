@@ -6,7 +6,7 @@
     <title>Todo</title>
 </head>
 <body>
-    <div id="container">
+    <div id="page-container">
         <div id="sidebar-container">
             <div id="sidebar-head">
                 <div id="user">
@@ -15,11 +15,33 @@
                 </div>
             </div>
             <div id="sidebar-main">
-                <div id="add-task">+ Add Task</div>
+                <div class="sidebar-section">
+                    <img class="sidebar-section-icon" src="images/add-circle.svg" alt="Add circle">
+                    <div class="sidebar-section-text">Add Task</div>
+                </div>
+                <div class="sidebar-section">
+                    <img class="sidebar-section-icon" src="images/home.svg" alt="Home icon">
+                    <div class="sidebar-section-text">Home</div>
+                </div>
             </div>
         </div>
         <div id="body-container">
-    
+            <div id="body-header">Hello, Snok</div>
+            <div class="list">
+                <div class="list-name">Home</div>
+                <div class="list-item">
+                    <span class="dot"></span>
+                    <div class="item-name">Check box</div>
+                </div>
+                <div class="list-item">
+                    <span class="dot"></span>
+                    <div class="item-name">Check box</div>
+                </div>
+                <div class="list-item">
+                    <span class="dot"></span>
+                    <div class="item-name">Check box</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
